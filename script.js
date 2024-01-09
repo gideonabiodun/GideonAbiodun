@@ -1,4 +1,4 @@
-// About 
+// Auto types function
 
 var typed = new Typed(".auto-input", {
     strings: ["Gideon <br> Abiodun", "Web <br> Developer", "Web <br> Designer"],
