@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+/* dropdow */
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: #f9004d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+}
+
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 70px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 .6rem;
+    z-index: 10;
+}
+
+.dropdown_menu.open{
+    height: 290px;
+}
+
+.dropdown_menu li a{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.dropdown_menu li a:hover{
+    color: #949494;
+    transition: .3s ease-in-out;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+/* Main style */
+
+.main-body {
+    overflow-x: hidden;
+}
+
+aside {
+    background: url(https://cdn3.iconfinder.com/data/icons/beos/BeOS_Bounce.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+
+    }
+}
+
+/* .main-body {
+    overflow-x: hidden;
+} */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(./images/DSC_0181\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+.menu {  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8% 1rem;
+    position: fixed;
+    z-index: 10;
+    background: #000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.abi {
+    color: #f9004d;
+}
+
+.menu .unorder .lists {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.menu .unorder .lists .links {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.menu .unorder .lists .links:hover {
+    color: #f9004d;
+    transition: 0.4s;
+}
+
+#btn {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+}
+
+#btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    margin-top: 5rem;
+}
+
+.gideon {
+    color: #fff;
+    margin: 20px 0px;
+    font-size: 4rem;
+}
+
+/* .web-dev {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 50px;
+} */
+
+.hello {
+    color: #838181;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.newslatter .let-start {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newslatter .let-start .input-one {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newslatter .let-start .input-two {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: #fff;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+
+.newslatter .let-start .input-two:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #191919;
+    /* border-radius: 2px; */
+}
+
+.about #gideon {
+    height: auto;
+    width: 330px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text .about-text-one {
+    color: #fff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text .about-text-two {
+    color: #fff;
+    letter-spacing: 2px;
+    /* line-height: 22px; */
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text .about-text-par {
+    color: rgba(236, 230, 236, 0.8);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+#buttn {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+#buttn:hover {
+    background-color: transparent;
+    border: 2px solid #f90049;
+    cursor: pointer;
+}
+
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title .my-services {
+    color: #fff;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card #fav-icon {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+
+.my-servi {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 15px
+}
+
+.pra .card-para {
+    color: rgba(236, 230, 236, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f90049;
+    cursor: pointer;
+}
+.contact-me {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me .contact-para {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-me .button-two {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.foot {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot .foot-para-one {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.foot .foot-para-two {
+    color: #fff;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social .links {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social .links:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.end {
+    position: absolute;
+    color: #4f4c4d;
+    bottom: 35px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-top: 1px solid rgb(85, 80, 80);
+    width: 100%;
+    padding-top: 1rem;
+}
+
+
+.sect-two {
+    width: 100%;
+    height: 80%;
+    background-color: #000;
+    margin-top: -8.26rem;
+}
+
+/* services page  */
+
+.head-menu {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9)50%, rgba(0,0,0,0.9)50%), url(./images/laptp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* about page  */
+
+.menn-divv {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.9)50%, rgba(0,0,0,.9)50%), url(./images/web.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.gideon {
+    width: 300px;
+}
+
+.abot-gideon {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin: 4rem 30rem;
+    padding: 0.3rem;
+    background: #130d0f;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.me {
+    color: #f9004d;
+}
+.about-me {
+    margin-top: 4rem;
+}
+
+
+
+
+
+@media screen and (max-width: 1129px) {
+    html {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .menu .unorder .lists .links {
+        display: none;
+    }
+
+}
+
+/* for ipad  */
+
+@media screen and (max-width: 900px) {
+
+    html {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+    .menu .unorder .lists .links, #btn {
+        display: none;
+    }
+
+    .content {
+        margin-top: 3rem;
+    }
+
+    .newslatter .let-start {
+        margin-top: 4rem;
+    }
+
+    .about .gideon {
+        width: 400px;
+        padding-bottom: 2.5rem;
+    }
+
+    .about .about-text-one {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .main {
+        flex-direction: column;
+    }
+    
+    /* service */
+
+.title .my-services {
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-left: -11rem;
+    }
+
+.box {
+    flex-direction: column;
+    }
+
+    .card {
+    width: 450px;
+    }
+
+   .my-servi {
+    font-size: 29px;
+    margin-bottom: 1rem
+    }
+
+.pra .card-para {
+    font-size: 17px;
+    margin-bottom: 2rem;
+    }
+
+    .contact-me .contact-para {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/* for phone  */
+
+@media screen and (max-width: 600px) and (min-width: 375px) {
+
+        html {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+    .menu {
+        padding: 0.6rem 1rem;
+    }
+    .logo {
+        font-size: 2rem;
+        /* margin-left: 4rem; */
+        /* padding: -7rem; */
+        /* margin-top: 1rem; */
+    }
+
+            #btn {
+        display: none;
+    }
+
+    .content .hello {
+        font-size: 1rem;
+    }
+
+    .gideon {
+        font-size: 1.9rem;
+    }
+
+    .newslatter .let-start {
+    width: 270px;
+    margin-top: 1rem;
+     }
+
+    .newslatter .let-start .input-two {
+    padding: 9px 20px;
+    top: 7px;
+    right: 6px;
+    }
+
+    .about .gideon {
+    width: 330px;
+    }
+
+    .about .about-text-one {
+        font-size: 3rem;
+        margin-left: 7rem;
+        margin-top: 2rem;
+    }
+
+     .about .about-text-two {
+        font-size: 1.5rem;
+        margin-left: 7rem;
+     }
+
+      .about .about-text-par {
+        font-size: 0.79rem;
+        margin: 2rem 7rem;
+      }
+
+      #buttn {
+        margin-left: 7rem;
+      }
+
+      .title .my-services {
+        font-size: 35px;
+        text-align: left;
+        margin-left: 5rem;
+        }
+    
+        .card {
+        width: 330px;
+        }
+    
+       .my-servi {
+        font-size: 23px;
+        }
+    
+    .pra .card-para {
+        font-size: 16px;
+        }
+    
+        .contact-me .contact-para {
+            font-size: 1.3rem;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+
+        .contact-me .button-two {
+            padding: 10px 37px;
+        }
+
+        .foot .foot-para-two {
+            font-size: 1rem;
+            padding: 0 6rem;
+        }
+}
