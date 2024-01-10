@@ -294,8 +294,10 @@ aside {
 }
 
 .services-list div:hover {
-    background: #ff004f;
-    transform: translateY(-10px);
+    background: #070606;
+    /* background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)); */
+    transform: scale(1.03);
+    border: 1px solid #bebebe;
 }
 
 /* portfolio */
