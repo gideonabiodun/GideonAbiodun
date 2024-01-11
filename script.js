@@ -1,7 +1,7 @@
 // Auto types function
 
 var typed = new Typed(".auto-input", {
-    strings: ["Gideon <br> Abiodun", "Web <br> Developer", "Web <br> Designer"],
+    strings: ["I'm Gideon <br> Abiodun", " I'm a Web <br> Developer", "I'm a Web <br> Designer"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

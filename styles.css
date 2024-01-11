@@ -156,7 +156,7 @@ aside {
 
 /* About */
 .hello {
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     color: #838181;
     letter-spacing: 2px;
     font-size: 18px;
@@ -196,6 +196,11 @@ aside {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+}
+
+.about-content {
+    line-height: 25px;
+    padding-top: 1.2rem;
 }
 
 .tab-titles {
