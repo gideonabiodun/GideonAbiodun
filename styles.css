@@ -26,6 +26,11 @@ body {
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.logo:hover {
+    transform: scale(1.04);
 }
 
 #header {
@@ -192,6 +197,10 @@ aside {
     flex-basis: 60%;
 }
 
+.cta{
+    color: rgb(181, 71, 105);
+}
+
 .sub-title {
     font-size: 60px;
     font-weight: 600;
@@ -268,7 +277,9 @@ aside {
 }
 
 .services-list div {
-    background: #262626;
+    background: #000000;
+    border: 1px solid #eee;
+    box-shadow: 2px 1.5px 1.5px 0px #ffffff;
     padding: 30px;
     font-size: 14px;
     line-height: 20px;
